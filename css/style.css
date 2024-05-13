@@ -1,0 +1,648 @@
+/* This is an external CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke; /* dirty white background color */
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+    background-color: darkred;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Align items to the right and left */
+    align-items: center;
+    color: black;
+}
+
+.menu-bar img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: black;
+    border-radius: 3px;
+}
+
+/* Search Bar Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #2bab0d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background: #228b0a;
+}
+
+/* Courses Section Styles */
+.COURSES ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.COURSES ul li {
+    margin: 10px;
+    width: 200px;
+}
+
+.COURSES ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.COURSES ul li img:hover {
+    transform: scale(1.1);
+}
+.course-item span{
+    color: black;
+}
+
+/* President Info Styles */
+.president-info {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.president-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.president-info span {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Map Info Styles */
+h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: maroon;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.map-info img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Title Styles */
+
+/* Wrapper Styles */
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh; /* Adjust this if needed */
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensure space between the containers */
+}
+
+.container {
+    width: calc(50% - 20px); /* Adjust width as needed, considering margin */
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 100px; /* Adjusted font size */
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container form button:hover {
+    background-color: #800000;
+}
+
+.container form button[type="reset"] {
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.signup-form {
+    display: none; /* Hide sign-up form by default */
+}
+
+
+/* Text below the image in president-info */
+.president-info p {
+    color: maroon;
+}
+
+.footermarinduque{
+    colot:black;
+    backgeiubd==
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   color: #f2f5f7;
+   font-family: sans-serif;
+   letter-spacing: 1px;
+   font-weight: 300;
+}
+
+/*ito ay dun sa nav sa index.php*/
+body{
+   overflow-x: hidden;
+}
+nav{
+   height: 8rem;
+   width: 100vw;
+   background-color:green;
+   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+   display: flex;
+   position: fixed;
+   z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+   padding:1vh 1vw;
+   text-align: center;
+}
+.logo img {
+   height: 6rem;
+   width: 6rem;
+}
+
+/*Styling Links*/
+.nav-links{
+   display: flex;
+   list-style: none; 
+   width: 88vw;
+   padding: 0 0.7vw;
+   align-items: center;
+   text-transform: uppercase;
+}
+.nav-links li a{
+   text-decoration: none;
+   margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+   color: red;
+}
+.nav-links li {
+   position: relative;
+}
+.nav-links li a:hover::before{
+   width: 80%;
+}
+
+/*Styling Buttons*/
+.login-button{
+   background-color: transparent;
+   border: 1.5px solid #f2f5f7;
+   border-radius: 2em;
+   padding: 0.6rem 0.8rem;
+   margin-left: 2vw;
+   font-size: 1rem;
+   cursor: pointer;
+
+}
+.login-button:hover {
+   color: #131418;
+   background-color: #f2f5f7;
+   border:1.5px solid #f2f5f7;
+   transition: all ease-in-out 350ms;
+}
+.join-button{
+   color: #131418;
+   background-color: #61DAFB;
+   border: 1.5px solid #61DAFB;
+   border-radius: 2em;
+   padding: 0.6rem 0.8rem;
+   font-size: 1rem;
+   cursor: pointer;
+}
+.join-button:hover {
+   color: #f2f5f7;
+   background-color: transparent;
+   border:1.5px solid #f2f5f7;
+   transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+   width: 30px;
+   height:3px;
+   background: #f2f5f7;
+   margin: 5px;
+   transition: all 0.3s ease;
+}
+.hamburger{
+   display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+   nav{
+       position: fixed;
+       z-index: 3;
+   }
+   .hamburger{
+       display:block;
+       position: absolute;
+       cursor: pointer;
+       right: 5%;
+       top: 50%;
+       transform: translate(-5%, -50%);
+       z-index: 2;
+       transition: all 0.7s ease;
+   }
+   .nav-links{
+       position: fixed;
+       background: #131418;
+       height: 100vh;
+       width: 100%;
+       flex-direction: column;
+       clip-path: circle(50px at 90% -20%);
+       -webkit-clip-path: circle(50px at 90% -10%);
+       transition: all 1s ease-out;
+       pointer-events: none;
+   }
+   .nav-links.open{
+       clip-path: circle(1000px at 90% -10%);
+       -webkit-clip-path: circle(1000px at 90% -10%);
+       pointer-events: all;
+   }
+   .nav-links li{
+       opacity: 0;
+   }
+   .nav-links li:nth-child(1){
+       transition: all 0.5s ease 0.2s;
+   }
+   .nav-links li:nth-child(2){
+       transition: all 0.5s ease 0.4s;
+   }
+   .nav-links li:nth-child(3){
+       transition: all 0.5s ease 0.6s;
+   }
+   .nav-links li:nth-child(4){
+       transition: all 0.5s ease 0.7s;
+   }
+   .nav-links li:nth-child(5){
+       transition: all 0.5s ease 0.8s;
+   }
+   .nav-links li:nth-child(6){
+       transition: all 0.5s ease 0.9s;
+       margin: 0;
+   }
+   .nav-links li:nth-child(7){
+       transition: all 0.5s ease 1s;
+       margin: 0;
+   }
+   li.fade{
+       opacity: 1;
+   }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+   transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+   transition: all 0.7s ease;
+   width:0;
+}
+.toggle .line3{
+   transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*ito ay logo dun sa index.php*/
+
+.msclogo {
+            display: flex;
+            justify-content: center;
+           
+        }
+.msclogo img {
+           width: 300px;
+            height: 300px;
+             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+             margin-top: 100px;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+/*ito ay  para sa mapa*/
+.map_main {
+    width: 90%;
+    height: 80%;
+    border: 5px solid #ccc; /* Border color and width */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    padding: 20px; /* Padding inside the border */
+    align-content: center;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/*para sa colum ng about us sa index*/
+.wrapper {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-container {
+    border-left: 1px solid #ccc; /* Add border between columns */
+    padding-left: 20px; /* Add padding to the left of content */
+}
+..content-container p {
+   color: black;
+}
+/* Optional: Adjust styles for president-info */
+.president-info {
+    margin-top: 20px; /* Add margin to separate from title */
+}
+
+.president-info img {
+    max-width: 100%; /* Ensure image doesn't exceed column width */
+}
+/*para sa about us*/
+   .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: green;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .president-info {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .president-info img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .president-info span {
+            font-weight: bold;
+        }
+        .content-container {
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+
+/* Add your existing CSS styles here */
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-column h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.text-column p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.program-offers {
+    color: black;
+    margin: 20px 0;
+    text-align: justify;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+/*para sa search*/
+.search-container {
+    display: flex;
+    align-items: center;
+    color: black;
+    
+}
+
+#searchInput {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the anchor tag */
+a {
+    text-decoration: none;
+}
+
+/*ito  ay sa slider*/
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coffee_taital {
+    font-size: 24px;
+    color: #333;
+}
+
+.bulit_icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.coffee_section_2 {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.fa-arrow-left, .fa-arrow-right {
+    color: #333;
+    font-size: 24px;
+}
+
+.fa-arrow-left:hover, .fa-arrow-right:hover {
+    color: #555;
+}
+
